@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <link href="cerifificate.css" rel="stylesheet">
+               <title>Document</title>
+</head>
+<body>
+              <div class="main">
+               <div class="heder"><div class="name">Shivam Srivastava</div></div>
+               <div class="middle">
+                              <div class="container">
+                                             <div class="box box1">
+                                                          
+                                             <div class="about-me">
+                                                         <h1 align="right">  Hello ! Welcome to my</h1>
+                                                           
+                                                            <div class="typewriter"><br><br><br><br>
+                                                                           <h1>  "Profile" </h1>
+                                                                           
+                                                                         </div>
+                                                                         <div class="wrapper">
+                                                                           <a href="start.html">KNow more</a>
+                                                                         </div>
+                                                          
+                                             </div>
+                                             </div>
+                                             <div class="box box2"><div class="dp">  </div></div>
+                                         </div>
+                              </div>
+               
+               
+
+                       
+              
+              
+</body>
+</html>
+
+<script>
+               document.addEventListener('DOMContentLoaded', function () {
+                   const box1 = document.querySelector('.box1');
+                   const box2 = document.querySelector('.box2');
+           
+                   // Add class to slide boxes from left to right
+                   setTimeout(() => {
+                       box1.classList.add('slide-right');
+                       box2.classList.add('slide-left');
+                   }, 500);
+           
+                   // Reset animation after a delay
+                   setTimeout(() => {
+                       box1.classList.remove('slide-right');
+                       box2.classList.remove('slide-left');
+           
+                       // Reset position
+                       setTimeout(() => {
+                           box1.style.transform = 'none';
+                           box2.style.transform = 'none';
+                       }, 500);
+                   }, 2000);
+               });
+           </script>
